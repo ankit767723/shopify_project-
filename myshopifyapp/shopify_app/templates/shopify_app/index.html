@@ -1,0 +1,15 @@
+<!-- shopify_app/templates/shopify_app/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopify App</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>Welcome to the Shopify App</h1>
+    <a href="{% url 'shopify_authenticate' %}?shop=your-shop-name.myshopify.com">Install App</a>
+    <script src="{% static 'js/app.js' %}"></script>
+</body>
+</html>
+
